@@ -174,7 +174,7 @@ Trigger it when working on competitor analysis, market intelligence, positioning
 
 Based on Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
-Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.
+Packaged as a skill for structured market intelligence, positioning, and go-to-market decisions.
 
 ## License
 
