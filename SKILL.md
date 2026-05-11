@@ -1,8 +1,8 @@
 ---
 name: market-command-matrix
 description: Classify competitors by market mindshare and resource strength, then choose whether to attack, monitor, harvest, ignore, or partner.
-version: 1.0.0
-author: Kastrah
+version: 1.1.0
+author: Patrick Campbell / Patticus
 license: MIT
 tags: [competition, strategy, positioning, market-intelligence, go-to-market]
 metadata:
@@ -14,7 +14,7 @@ metadata:
 
 Use this skill when you need structured competitor judgement for market mapping, campaign planning, positioning, go-to-market prioritisation, content strategy, or partnership decisions.
 
-The goal is not to summarise competitors. The goal is to decide what to do about them.
+The goal is not to summarise competitors. The goal is to build judgement, then decide what to do about them. As the source article puts it: intelligence is upstream of action.
 
 ## The model
 
@@ -27,9 +27,10 @@ Classify each player using two axes:
    - Are they the default comparison when buyers think about the problem?
 
 2. **Resource strength**
-   - How much execution capacity do they have?
+   - How many resources are they dedicating to winning this specific market?
    - Consider funding, team size, distribution, technical capability, partnerships, operational depth, and focus.
-   - Resources are not only money. A small team with strong distribution or regulatory access may still be resource-strong.
+   - Score resource strength relative to market dedication, not company size alone. A large company with a broad product may be resource-weak in your niche; a small company focused entirely on the market may be resource-strong.
+   - Practical scoring: score your own company first on a 1-5 scale, then score others relative to your market focus and execution capacity.
 
 ## Decision categories
 
@@ -93,6 +94,8 @@ What to do:
 
 ## Competitor set mapping
 
+The source framework argues that traditional competitor buckets are less important than the customer view of the market. Use the buckets below to organise discovery, but matrix placement must be based on what customers know, use, and can easily find.
+
 Before placing players in the matrix, classify the market map.
 
 ### Direct competitors
@@ -133,9 +136,34 @@ Ask:
 
 ## Research process
 
+A complete competitive intelligence programme has three parts:
+
+1. **Reconnaissance** — identify the competitors customers actually think about and build the Market Command Matrix.
+2. **Monitoring and extraction** — collect fresh signals automatically or on a fixed cadence.
+3. **Operationalise with playbooks** — attack, defend, harvest, ignore, or partner at the right time.
+
 Run this in order.
 
 ### 1. Reconnaissance
+
+Start with a customer-led global sweep when possible. The core market mindshare question is unaided:
+
+> When you think of [CATEGORY], what is the first product that comes to mind?
+
+Then add aided questions for recognition, current usage, recommendation likelihood, and what customers value or dislike about the product they use.
+
+Survey sources, from easiest to hardest:
+- customers and prospects in your database, ideally sent anonymously to reduce bias
+- paid market panelists
+- prospects outside your database, subject to compliance
+- competitor customers from public logos, case studies, reviews, and social proof
+- targeted ads that send respondents to the survey
+
+Bias controls:
+- Use unaided questions before aided questions.
+- Avoid anchoring respondents around your own brand or a named competitor.
+- Use anonymous or neutral research framing when possible.
+- Do not incentivise with raffles unless each respondent is directly paid.
 
 Collect current signals for each priority player:
 - website and landing-page messaging
@@ -151,9 +179,9 @@ Collect current signals for each priority player:
 
 Separate verified evidence from assumptions.
 
-### 2. Signal extraction
+### 2. Monitoring and signal extraction
 
-Answer these for each player:
+Monitor priority competitors on a monthly or quarterly cadence. Answer these for each player:
 - What promise are they making?
 - Who are they speaking to?
 - What pain do they lead with?
@@ -212,7 +240,16 @@ Partner playbooks:
 - audience swap
 - co-branded trust proof
 
-### 5. Whitespace and positioning
+### 5. Market-shape interpretation
+
+After matrix placement, identify the market shape:
+
+- **Intensely fragmented** — no clear winner. If the market is large or early, grow fast. If the market is small or low-value, reconsider the opportunity.
+- **Challenger** — one or two big players dominate. Attack the leaders and consider partnering with other challengers.
+- **Ancient** — old incumbents with stagnant products or poor customer experience. Use harvest playbooks heavily.
+- **Mature** — active market with entrants, exits, and competitors across quadrants. Run offensive and defensive playbooks.
+
+### 6. Whitespace and positioning
 
 Do not stop at competitor summaries. Extract the gap.
 
@@ -270,7 +307,11 @@ Use this for full analysis:
    - Output
    - Deadline or checkpoint
 
-7. **Milestones and triggers**
+7. **Market shape**
+   - Fragmented / challenger / ancient / mature
+   - What that means for strategy
+
+8. **Milestones and triggers**
    - What to monitor
    - What would change the decision
    - When to revisit the matrix
@@ -296,7 +337,10 @@ Do not finalise the analysis unless it includes:
 - selected playbook per priority player
 - next action per priority player
 - measurable checkpoint or trigger
+- market-shape interpretation where enough data exists
 
 ## Source
 
-Created by Kastrah as a practical competitor strategy framework. Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.
+Based on Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+
+Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.

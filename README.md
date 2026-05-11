@@ -1,11 +1,11 @@
 # Market Command Matrix
 
-A competitor strategy framework for deciding what to do about players in your market.
+A competitor strategy framework, based on Patrick Campbell / Patticus, for deciding what to do about players in your market.
 
 Most competitor research stops at summaries: who exists, what they sell, what their website says. That is not enough. The Market Command Matrix turns competitor signals into action by classifying each player by two things:
 
 - **Market mindshare** — how much awareness, conversation, and category association they have.
-- **Resource strength** — how much capacity they have to execute, expand, defend, or copy.
+- **Resource strength** — how much capacity and focus they have dedicated to winning this market.
 
 The result is a practical decision: **attack, monitor, harvest, ignore, or partner.**
 
@@ -80,13 +80,25 @@ This player does not need to be beaten to create advantage. Explore integration,
 
 ## Research workflow
 
+The full programme has three parts:
+
+1. **Reconnaissance** — identify competitors and build the matrix from the customer view of the market.
+2. **Monitoring and extraction** — collect fresh signals on a fixed cadence.
+3. **Operationalise with playbooks** — attack, defend, harvest, ignore, or partner at the right time.
+
 1. **Map the competitor set**
    - Direct competitors
    - Adjacent competitors
    - Substitute behaviours
    - Ecosystem actors
 
-2. **Collect signals**
+2. **Run customer-led reconnaissance**
+   - Use unaided questions before aided questions.
+   - Core question: "When you think of [CATEGORY], what is the first product that comes to mind?"
+   - Add aided recognition, current usage, recommendation likelihood, and value/friction questions.
+   - Use anonymous or neutral research framing where possible to reduce bias.
+
+3. **Collect monitoring signals**
    - Website and landing-page messaging
    - Product pages and feature claims
    - Social profiles and recent themes
@@ -98,7 +110,7 @@ This player does not need to be beaten to create advantage. Explore integration,
    - SEO/blog topics
    - Customer comments, FAQs, and repeated objections
 
-3. **Extract meaning**
+4. **Extract meaning**
    - What promise are they making?
    - Who are they speaking to?
    - What pain do they lead with?
@@ -108,13 +120,19 @@ This player does not need to be beaten to create advantage. Explore integration,
    - What do they avoid saying?
    - What operational weakness is visible?
 
-4. **Place each player in the matrix**
+5. **Place each player in the matrix**
    - Mindshare: high / medium / low
    - Resources: high / medium / low
    - Category: attack / monitor / harvest / ignore / partner
    - Confidence: high / medium / low
 
-5. **Choose the playbook**
+6. **Interpret the market shape**
+   - Fragmented: no clear winner; grow fast if the market is valuable.
+   - Challenger: one or two large players; attack the leader or partner with challengers.
+   - Ancient: stagnant incumbents; harvest aggressively.
+   - Mature: active entrants and exits; run offensive and defensive playbooks.
+
+7. **Choose the playbook**
    - One primary motion per priority player.
    - Do not produce a research dump. Decide what to do.
 
@@ -128,7 +146,8 @@ For a full analysis, use:
 4. Matrix placement
 5. Whitespace and positioning
 6. Recommended actions
-7. Milestones and triggers
+7. Market shape
+8. Milestones and triggers
 
 For a one-page decision memo, use:
 
@@ -153,7 +172,9 @@ Trigger it when working on competitor analysis, market intelligence, positioning
 
 ## Source
 
-Created by Kastrah as a practical competitor strategy framework. Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.
+Based on Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+
+Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.
 
 ## License
 
