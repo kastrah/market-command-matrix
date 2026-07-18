@@ -24,7 +24,7 @@ This skill classifies competitors on two axes (market mindshare and resource str
 
 ## Source scope
 
-The Market Command Matrix is condensed from Patrick Campbell's "Competitor Research and Strategy Playbook" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+The Market Command Matrix is condensed from Patrick Campbell's Competitor Research and Strategy (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
 
 This skill is a decision framework that uses customer-led evidence to classify competitors and prescribe action.
@@ -343,6 +343,6 @@ If a cron job or routing rule references an absorbed skill name, update it to re
 
 ## Source
 
-Based on Patrick Campbell's "Competitor Research and Strategy Playbook" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+Based on Patrick Campbell's Competitor Research and Strategy (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
 Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.

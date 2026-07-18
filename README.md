@@ -1,6 +1,6 @@
 # Market Command Matrix
 
-A competitor strategy framework for deciding what to do about players in your market. Based on *Patrick Campbell's "Competitor Research and Strategy Playbook."*
+A competitor strategy framework for deciding what to do about players in your market. Based on *Patrick Campbell's Competitor Research and Strategy.*
 
 Most competitor research stops at summaries: who exists, what they sell, what their website says. The Market Command Matrix turns competitor signals into action by classifying each player on two axes:
 
@@ -102,7 +102,7 @@ Trigger it when working on competitor analysis, market intelligence, positioning
 
 ## Source
 
-Based on *Patrick Campbell's "Competitor Research and Strategy Playbook"* (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+Based on *Patrick Campbell's Competitor Research and Strategy* (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
 Packaged as a skill for structured market intelligence, positioning, and go-to-market decisions.
 
