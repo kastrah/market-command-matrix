@@ -1,10 +1,6 @@
 ---
 name: market-command-matrix
-description: >
-  Classify competitors by market mindshare and resource strength, then choose
-  whether to attack, monitor, harvest, ignore, or partner. Structured competitor
-  judgement for market mapping, campaign planning, positioning, go-to-market
-  prioritisation, content strategy, or partnership decisions.
+description: Classify competitors by market mindshare and resource strength, then decide whether to attack, monitor, harvest, ignore, or partner.
 version: 2.0.0
 author: Kastrah
 license: MIT
