@@ -1,7 +1,11 @@
 ---
 name: market-command-matrix
-description: Classify competitors by market mindshare and resource strength, then choose whether to attack, monitor, harvest, ignore, or partner.
-version: 1.1.0
+description: >
+  Classify competitors by market mindshare and resource strength, then choose
+  whether to attack, monitor, harvest, ignore, or partner. Structured competitor
+  judgement for market mapping, campaign planning, positioning, go-to-market
+  prioritisation, content strategy, or partnership decisions.
+version: 2.0.0
 author: Patrick Campbell / Patticus
 license: MIT
 tags: [competition, strategy, positioning, market-intelligence, go-to-market]
@@ -12,313 +16,246 @@ metadata:
 
 # Market Command Matrix
 
-Use this skill when you need structured competitor judgement for market mapping, campaign planning, positioning, go-to-market prioritisation, content strategy, or partnership decisions.
+## Overview
 
-The goal is not to summarise competitors. The goal is to build judgement, then decide what to do about them. As the source article puts it: intelligence is upstream of action.
+Use this skill when you need structured competitor judgement. The goal is to build judgement, then decide what to do about each player. Intelligence is upstream of action.
+
+This skill classifies competitors on two axes (market mindshare and resource strength), assigns a strategic category (attack, monitor, harvest, ignore, partner), selects a playbook, and identifies whitespace. It produces decisions, not descriptions.
+
+## Source scope
+
+The Market Command Matrix is condensed from Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
+
+Full extracted source notes live in `references/patticus-source-notes.md`.
+
+This skill is a decision framework that uses customer-led evidence to classify competitors and prescribe action.
+
+## When to use this skill
+
+Use market-command-matrix when the user asks to:
+
+- map the competitive landscape for a market, category, or niche
+- decide which competitors to attack, monitor, harvest, ignore, or partner with
+- prioritise competitive responses for campaign planning or go-to-market
+- identify whitespace and positioning opportunities
+- build battlecards, comparison pages, or wedge campaign targets
+- evaluate whether a new entrant changes the competitive picture
+- decide whether to partner with or compete against a specific player
+- refresh an existing competitor map with current signals
+
+Do not use it for:
+
+- **Tactical competitor content** (what they posted last week, their latest ad) — use web monitoring or the signal monitor source map
+- **Product feature comparison** — that's a feature matrix, not a command matrix
+- **Internal strategy without competitive context** — this skill requires external evidence
+- **One-off competitor lookups** — this is for building a structured map, not answering "what does X do?"
+- **Content strategy without a competitive angle** — use the content pipeline or blog-audit instead
+
+## Inputs to collect before running
+
+Before starting the analysis, gather:
+
+1. **Your brand/product** — what you sell, who it's for, what job it does
+2. **The market or category** — the specific space you're mapping (not "all of tech" — be narrow)
+3. **Customer view** — if available: unaided recall data, survey results, review mining, social listening. If not available, say so and flag it as the first gap to fill.
+4. **Competitor signals** — for each known player: website, messaging, pricing, social presence, hiring, funding, partnerships, app store reviews, press mentions
+5. **Your own resource level** — honest score on the same 1-5 scale you'll use for competitors
+6. **Strategic context** — what decision this map needs to inform (launch? reposition? partnership? content theme?)
+
+If critical details are missing (especially customer view), proceed with what's available and flag gaps. Do not invent customer data.
 
 ## The model
 
 Classify each player using two axes:
 
-1. **Market mindshare**
-   - How aware is the market of this player?
-   - Do customers mention them unprompted?
-   - Do they own search, social, press, community, or category conversation?
-   - Are they the default comparison when buyers think about the problem?
+### 1. Market mindshare
 
-2. **Resource strength**
-   - How many resources are they dedicating to winning this specific market?
-   - Consider funding, team size, distribution, technical capability, partnerships, operational depth, and focus.
-   - Score resource strength relative to market dedication, not company size alone. A large company with a broad product may be resource-weak in your niche; a small company focused entirely on the market may be resource-strong.
-   - Practical scoring: score your own company first on a 1-5 scale, then score others relative to your market focus and execution capacity.
+How aware is the market of this player?
+
+- Do customers mention them unprompted?
+- Do they own search, social, press, community, or category conversation?
+- Are they the default comparison when buyers think about the problem?
+- Score 1-5: 1 = invisible, 5 = category default
+
+**Critical rule:** Market mindshare must come from customer evidence, not internal anxiety or boardroom repetition. If you have no customer data, say so and score with low confidence.
+
+### 2. Resource strength
+
+How many resources are they dedicating to winning this specific market?
+
+- Funding, team size, distribution, technical capability, partnerships, operational depth, focus
+- Score relative to market dedication, not company size alone
+- A large company with a broad product may be resource-weak in your niche
+- A small company focused entirely on the market may be resource-strong
+- Score 1-5: 1 = minimal investment, 5 = all-in
+
+**Critical rule:** Score your own company first on the 1-5 scale, then score others relative to your market focus and execution capacity. This calibrates your judgement.
 
 ## Decision categories
 
-### All-out attack
+Map each player to one category based on their mindshare + resource position:
 
-High mindshare + high resources.
-
-Use when the player is visible, capable, and competing for the same market position.
-
-What to do:
-- Attack with a narrow wedge, not broad imitation.
-- Build comparison pages or battlecards.
-- Lead with proof they cannot easily copy.
-- Focus on a specific audience, use case, geography, workflow, or belief gap.
-- Expect retaliation or fast copying.
-
-### Monitor
-
-Low mindshare + high resources.
-
-Use when the player has capacity but has not yet captured market attention.
-
-What to do:
-- Track funding, hiring, pricing, messaging, partnerships, launches, and channel movement.
-- Set triggers for when monitoring becomes active competition.
-- Do not overreact until their market signal changes.
-
-### Harvest
-
-High mindshare + low resources.
-
-Use when the player has awareness but weak execution capacity.
-
-What to do:
-- Use their awareness to educate the market.
-- Win on fulfilment, reliability, proof, depth, support, or trust.
-- Create migration paths, gap content, and switching offers.
-- Capture customers who already believe in the category but are underserved.
-
-### Ignore
-
-Low mindshare + low resources.
-
-Use when the player has little attention and little capacity.
-
-What to do:
-- Do not spend strategic energy on them.
-- Note any useful customer signal they reveal.
-- Revisit only if mindshare or resources change.
-
-### Partner
-
-Complementary or ecosystem player.
-
-Use when the player does not need to be beaten to create advantage.
-
-What to do:
-- Explore integration, referral, co-marketing, bundling, or distribution.
-- Define the value exchange clearly.
-- Watch for channel conflict or future competitive risk.
+| Category | Mindshare | Resources | What to do |
+|---|---|---|---|
+| **All-out attack** | High | High | Sharp wedge, clear proof, channel discipline. Build comparison pages, battlecards, wedge campaigns. Expect retaliation. |
+| **Monitor** | Low | High | Track until their signal changes. Do not overreact early. |
+| **Harvest** | High | Low | Use their awareness to educate the market, create doubt around their gaps, make switching easy. |
+| **Ignore** | Low | Low | Do not spend strategic energy unless they reveal a useful customer signal or move quadrant. |
+| **Partner** | Complementary | Complementary | Explore integration, referral, co-marketing, bundling, or distribution. |
 
 ## Competitor set mapping
 
-The source framework argues that traditional competitor buckets are less important than the customer view of the market. Use the buckets below to organise discovery, but matrix placement must be based on what customers know, use, and can easily find.
+Organise the market into four buckets. Matrix placement must be based on what customers know, use, and can easily find — not internal org charts.
 
-Before placing players in the matrix, classify the market map.
+1. **Direct competitors** — same buyer, same job-to-be-done, similar promise
+2. **Adjacent competitors** — solve part of the same problem or own a neighbouring workflow
+3. **Substitute behaviours** — manual, informal, or existing behaviours customers use instead
+4. **Ecosystem actors** — media, communities, platforms, regulators, service providers, agencies, distribution partners, infrastructure players
 
-### Direct competitors
+## Step-by-step process
 
-Same buyer, same job-to-be-done, similar promise.
+### Step 1: Define the market boundaries
 
-Ask:
-- Are we fighting for the same budget, behaviour, or decision?
-- Would a buyer compare us directly?
-- Are they trying to become the default choice for the same problem?
+- What category or problem you're mapping
+- Who the buyer is
+- What job-to-be-done the product fulfils
+- Geographic or segment scope
 
-### Adjacent competitors
+If this is vague, the matrix will be vague. Tighten before proceeding.
 
-Solve part of the same problem or own a neighbouring workflow.
+### Step 2: Sweep for competitors
 
-Ask:
-- Could they expand into our lane?
-- Do they already own part of the customer's trust or workflow?
-- Are they a threat, a partner, or both?
-
-### Substitute behaviours
-
-The manual, informal, or existing behaviour customers use instead.
-
-Ask:
-- What do people do today without buying a product?
-- What workaround feels "good enough"?
-- What habit must change before the product can win?
-
-### Ecosystem actors
-
-Media, communities, platforms, regulators, service providers, agencies, distribution partners, and infrastructure players that shape the market.
-
-Ask:
-- Who influences trust, access, attention, or fulfilment?
-- Who can amplify or block adoption?
-- Who should be monitored or partnered with?
-
-## Research process
-
-A complete competitive intelligence programme has three parts:
-
-1. **Reconnaissance** — identify the competitors customers actually think about and build the Market Command Matrix.
-2. **Monitoring and extraction** — collect fresh signals automatically or on a fixed cadence.
-3. **Operationalise with playbooks** — attack, defend, harvest, ignore, or partner at the right time.
-
-Run this in order.
-
-### 1. Reconnaissance
-
-Start with a customer-led global sweep when possible. The core market mindshare question is unaided:
+Use a customer-led approach. The core question is unaided recall:
 
 > When you think of [CATEGORY], what is the first product that comes to mind?
 
-Then add aided questions for recognition, current usage, recommendation likelihood, and what customers value or dislike about the product they use.
+Then add aided questions for recognition, usage, recommendation, and value/dissatisfaction.
 
-Survey sources, from easiest to hardest:
-- customers and prospects in your database, ideally sent anonymously to reduce bias
-- paid market panelists
-- prospects outside your database, subject to compliance
-- competitor customers from public logos, case studies, reviews, and social proof
-- targeted ads that send respondents to the survey
+**Survey sources (easiest to hardest):**
+1. Customers and prospects in your database (anonymous to reduce bias)
+2. Paid market panelists
+3. Prospects outside your database (subject to compliance)
+4. Competitor customers from public logos, case studies, reviews, social proof
+5. Targeted ads sending respondents to the survey
 
-Bias controls:
-- Use unaided questions before aided questions.
-- Avoid anchoring respondents around your own brand or a named competitor.
-- Use anonymous or neutral research framing when possible.
-- Do not incentivise with raffles unless each respondent is directly paid.
+**Bias controls:**
+- Unaided questions before aided questions
+- No anchoring around your brand or a named competitor
+- Neutral or anonymous research framing
+- No raffle incentives unless each respondent is directly paid
 
-Collect current signals for each priority player:
-- website and landing-page messaging
-- product pages and feature claims
-- social profiles and recent themes
-- visible ads or campaign pushes
-- app store listings and reviews, if relevant
-- pricing and onboarding flow
-- press mentions and partnerships
-- hiring, funding, and expansion signals
-- SEO/blog topics
-- customer comments, FAQs, and repeated objections
+If you cannot run a survey, use proxy signals: search data, social listening, review mining, app store rankings, press coverage, community mentions. Flag that you're using proxy data.
 
-Separate verified evidence from assumptions.
+### Step 3: Collect signals for each player
 
-### 2. Monitoring and signal extraction
+For each priority competitor, gather:
 
-Monitor priority competitors on a monthly or quarterly cadence. Answer these for each player:
-- What promise are they making?
-- Who are they speaking to?
-- What pain do they lead with?
-- What proof do they show?
-- What CTA do they push?
-- What channel are they strongest on?
-- What do they avoid saying?
-- What operational weakness is visible?
-- What customer behaviour are they trying to change?
+- Website and landing-page messaging
+- Product pages and feature claims
+- Social profiles and recent themes
+- Visible ads or campaign pushes
+- App store listings and reviews (if relevant)
+- Pricing and onboarding flow
+- Press mentions and partnerships
+- Hiring, funding, and expansion signals
+- SEO and blog topics
+- Customer comments, FAQs, repeated objections
 
-### 3. Matrix placement
+**Separate verified evidence from assumptions.** State the source and date for each signal. If you're guessing, say so.
 
-For each player, state:
-- category: attack, monitor, harvest, ignore, or partner
-- rationale
-- confidence: high, medium, or low
-- evidence used
-- what would change the placement
+### Step 4: Score and place on the matrix
 
-### 4. Playbook selection
+For each player:
+
+1. Score market mindshare (1-5) with evidence and confidence level
+2. Score resource strength (1-5) with evidence and confidence level
+3. Assign category: attack, monitor, harvest, ignore, or partner
+4. Write a one-line rationale
+5. State what would change the placement (trigger)
+
+**Score your own company first.** Then score competitors relative to your position.
+
+### Step 5: Select playbooks
 
 Choose one primary motion per priority player.
 
-Attack playbooks:
-- comparison page
-- wedge campaign
-- proof-led positioning
-- partnership attack
-- content wedge
-- sales battlecard
+**Attack playbooks:**
+- Comparison page
+- Wedge campaign
+- Proof-led positioning
+- Partnership attack
+- Content wedge
+- Sales battlecard
 
-Defend playbooks:
-- retention messaging
-- customer education
-- objection handling
-- proof bank
-- switching-cost reinforcement
+**Defend playbooks:**
+- Retention messaging
+- Customer education
+- Objection handling
+- Proof bank
+- Switching-cost reinforcement
 
-Harvest playbooks:
-- migration offer
-- gap content
-- local execution story
-- operational reliability proof
-- integration strategy
+**Harvest playbooks:**
+- Migration offer
+- Gap content
+- Switching path
+- Operational reliability proof
+- Integration strategy
 
-Monitor playbooks:
-- monthly watchlist
-- trigger tracking
-- funding, hiring, and partnership alerts
-- messaging change log
+**Monitor playbooks:**
+- Monthly watchlist
+- Trigger tracking
+- Funding, hiring, partnership alerts
+- Messaging change log
 
-Partner playbooks:
-- ecosystem integration plan
-- referral path
-- joint campaign
-- audience swap
-- co-branded trust proof
+**Partner playbooks:**
+- Ecosystem integration plan
+- Referral path
+- Joint campaign
+- Audience swap
+- Co-branded trust proof
 
-### 5. Market-shape interpretation
+### Step 6: Identify whitespace and positioning
 
-After matrix placement, identify the market shape:
+Extract the gap. Look for:
 
-- **Intensely fragmented** — no clear winner. If the market is large or early, grow fast. If the market is small or low-value, reconsider the opportunity.
-- **Challenger** — one or two big players dominate. Attack the leaders and consider partnering with other challengers.
-- **Ancient** — old incumbents with stagnant products or poor customer experience. Use harvest playbooks heavily.
-- **Mature** — active market with entrants, exits, and competitors across quadrants. Run offensive and defensive playbooks.
-
-### 6. Whitespace and positioning
-
-Do not stop at competitor summaries. Extract the gap.
-
-Look for:
-- underserved audience
-- weak or vague promise
-- missing proof
-- poor follow-through
-- confusing CTA
-- over-education without action
-- action without reassurance
-- product promise without operational depth
-- trust gap
-- channel mismatch
+- Underserved audience
+- Weak or vague promise
+- Missing proof
+- Poor follow-through
+- Confusing CTA
+- Over-education without action
+- Action without reassurance
+- Product promise without operational depth
+- Trust gap
+- Channel mismatch
 
 Convert each gap into a decision or action.
 
+### Step 7: Interpret market shape
+
+Identify the market shape:
+
+- **Intensely fragmented** — no clear winner. Grow fast if the market is large or early. Reconsider if small or low-value.
+- **Challenger** — one or two big players dominate. Attack the leaders; consider partnering with other challengers.
+- **Ancient** — old incumbents with stagnant products or poor customer experience. Harvest aggressively.
+- **Mature** — active market with entrants, exits, and competitors across quadrants. Run offensive and defensive playbooks.
+
 ## Output format
 
-Use this for full analysis:
+### Full analysis
 
-1. **Strategic thesis**
-   - One sentence on what the market map means.
+1. **Strategic thesis** — one sentence on what the market map means
+2. **Competitor set** — direct, adjacent, substitute behaviours, ecosystem actors
+3. **Evidence table** — player, signal, source, date checked, confidence, implication
+4. **Matrix placement** — mindshare score, resource score, category, rationale, trigger
+5. **Whitespace and positioning** — what the market is missing, what the brand can credibly own, what not to copy
+6. **Recommended actions** — action, owner, dependency, output, deadline/checkpoint
+7. **Market shape** — fragmented / challenger / ancient / mature, and what it means
+8. **Milestones and triggers** — what to monitor, what would change the decision, when to revisit
 
-2. **Competitor map**
-   - Direct competitors
-   - Adjacent competitors
-   - Substitute behaviours
-   - Ecosystem actors
+### One-page decision memo
 
-3. **Evidence table**
-   - Player
-   - Signal
-   - Source
-   - Date checked
-   - Confidence
-   - Implication
-
-4. **Matrix placement**
-   - Player
-   - Mindshare: high/medium/low
-   - Resources: high/medium/low
-   - Category: attack/monitor/harvest/ignore/partner
-   - Rationale
-
-5. **Whitespace and positioning**
-   - What the market is missing
-   - What the brand/product can credibly own
-   - What to avoid copying
-
-6. **Recommended actions**
-   - Action
-   - Owner
-   - Dependency
-   - Output
-   - Deadline or checkpoint
-
-7. **Market shape**
-   - Fragmented / challenger / ancient / mature
-   - What that means for strategy
-
-8. **Milestones and triggers**
-   - What to monitor
-   - What would change the decision
-   - When to revisit the matrix
-
-## One-page format
-
-When the user needs a compressed decision memo, use this:
+When the user needs a compressed format:
 
 - **Player:** name
 - **Placement:** attack / monitor / harvest / ignore / partner
@@ -327,20 +264,88 @@ When the user needs a compressed decision memo, use this:
 - **Action:** one concrete next move
 - **Trigger:** what to watch next
 
+## Common pitfalls
+
+1. **Scoring mindshare from internal anxiety instead of customer evidence.** "They keep showing up in our mentions" is not mindshare data. Unaided recall is. If you don't have customer data, say so and score with low confidence.
+
+2. **Treating company size as resource strength.** A $2B company with 3 people on your niche is resource-weak there. A 10-person startup that only does what you do is resource-strong. Score market dedication, not headcount.
+
+3. **Placing every competitor in "attack."** If everyone is high-mindshare and high-resource, your market definition is too broad or your scoring is biased. Tighten the category or recalibrate.
+
+4. **Building the matrix without whitespace.** A matrix that classifies competitors but doesn't extract the gap is half done. The positioning insight is the payoff.
+
+5. **Skipping the verification step.** If you can't point to a source for a mindshare or resource score, it's an assumption. Mark it as one.
+
+6. **Running this for a single tactical question.** "Should we run a comparison ad against X?" is a tactical call. This skill is for building the map that informs those calls, not for answering them individually.
+
+7. **Forgetting to score your own company first.** Without your own position as anchor, relative scoring drifts. Score yourself honestly, then place others relative to that.
+
+8. **Using this skill for content strategy without a competitive angle.** If the task is "write a blog post" or "plan our content calendar," use the content pipeline or blog-audit. This skill is for when competitive positioning is the actual question.
+
+9. **Publishing the matrix without separating verified vs assumed.** Every signal needs a source and confidence level. An analysis that treats guesses the same as evidence is worse than no analysis.
+
+10. **Re-running from scratch instead of updating.** The matrix is a living document. On refresh, re-check signals and re-score — don't rebuild the structure each time. The framework persists; the data updates.
+
+## Verification checklist
+
+Before returning the final analysis:
+
+- [ ] Market boundaries are defined (category, buyer, job-to-be-done, scope)
+- [ ] Competitor set covers direct, adjacent, substitutes, and ecosystem actors
+- [ ] Mindshare scores are based on customer evidence or proxy data (not internal anxiety)
+- [ ] Resource scores are relative to market dedication (not company size)
+- [ ] Your own company is scored first as anchor
+- [ ] Every signal has a source and date
+- [ ] Verified evidence is separated from assumptions
+- [ ] Each priority player has a category, rationale, and trigger
+- [ ] Playbook is selected for each priority player
+- [ ] Whitespace and positioning gaps are identified
+- [ ] Market shape is interpreted (if enough data exists)
+- [ ] Recommended actions have owners, dependencies, and checkpoints
+
 ## Completion gate
 
-Do not finalise the analysis unless it includes:
-- competitor set classification
-- matrix category for each priority player
-- rationale with evidence and confidence
-- verified vs assumed separation
-- selected playbook per priority player
-- next action per priority player
-- measurable checkpoint or trigger
-- market-shape interpretation where enough data exists
+Do not finalise unless the analysis includes:
+
+- Competitor set classification (direct, adjacent, substitute, ecosystem)
+- Matrix category for each priority player
+- Rationale with evidence and confidence
+- Verified vs assumed separation
+- Selected playbook per priority player
+- Next action per priority player
+- Measurable checkpoint or trigger
+- Market-shape interpretation where enough data exists
+
+## Pairing guidance
+
+- **After this skill:** If the output includes positioning or messaging decisions, run `copy-pass` to sharpen the copy before publishing.
+- **For customer-facing competitor responses:** Use `care-review` on any direct messages about competitors.
+- **For ongoing monitoring:** Feed the matrix triggers into a monitoring cadence (monthly watchlist, trigger tracking).
+- **For content that references competitors:** Run the output through `humaniser` before publishing.
+
+## Public repo packaging rule
+
+This is a general framework. Public examples and docs must stay client-agnostic. Do not include internal workspace paths, private brand names, campaign-specific language, or examples tied to one company unless the repo is intentionally company-specific.
+
+When publishing or updating a framework repo:
+- Include a clear README usage description
+- Include a Hermes-compatible `SKILL.md`
+- Add a source attribution line that names the real source/author, not the packager
+- Scan for private paths and client-specific language before pushing
+- Verify the remote README and SKILL.md after pushing
+
+## Compatibility aliases
+
+This skill is the canonical class-level framework for competitive intelligence. It replaces and absorbs the following legacy skill names:
+
+- `newsroom-famasi-competitor-intelligence` — old newsroom trigger for Famasi competitor analysis. Now handled natively: any trigger loading this name should load `market-command-matrix` instead and apply it to the current brand, product, campaign, or market.
+
+If a cron job or routing rule references an absorbed skill name, update it to reference `market-command-matrix` directly.
 
 ## Source
 
 Based on Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
 Packaged as a Hermes skill for structured market intelligence, positioning, and go-to-market decisions.
+
+See `references/patticus-source-notes.md` for condensed source notes, survey prompts, market-shape definitions, and attribution guidance.

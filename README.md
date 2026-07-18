@@ -1,8 +1,8 @@
 # Market Command Matrix
 
-A competitor strategy framework, based on Patrick Campbell / Patticus, for deciding what to do about players in your market.
+A competitor strategy framework for deciding what to do about players in your market. Based on Patrick Campbell / Patticus.
 
-Most competitor research stops at summaries: who exists, what they sell, what their website says. That is not enough. The Market Command Matrix turns competitor signals into action by classifying each player by two things:
+Most competitor research stops at summaries: who exists, what they sell, what their website says. The Market Command Matrix turns competitor signals into action by classifying each player on two axes:
 
 - **Market mindshare** — how much awareness, conversation, and category association they have.
 - **Resource strength** — how much capacity and focus they have dedicated to winning this market.
@@ -11,145 +11,75 @@ The result is a practical decision: **attack, monitor, harvest, ignore, or partn
 
 ## What it helps with
 
-Use this framework for:
-
-- competitor research
-- market mapping
-- positioning strategy
-- campaign planning
-- go-to-market prioritisation
-- content wedge development
-- sales battlecards
-- partnership decisions
-- monthly market intelligence reviews
+- Competitor research and market mapping
+- Positioning strategy
+- Campaign planning and go-to-market prioritisation
+- Content wedge development and sales battlecards
+- Partnership decisions
+- Monthly market intelligence reviews
 
 ## The matrix
 
-### All-out attack
+| Category | Mindshare | Resources | What to do |
+|---|---|---|---|
+| **All-out attack** | High | High | Sharp wedge, clear proof, channel discipline. Build comparison pages, battlecards, wedge campaigns. Expect retaliation. |
+| **Monitor** | Low | High | Track until their signal changes. Do not overreact early. |
+| **Harvest** | High | Low | Use their awareness to educate the market, create doubt around their gaps, make switching easy. |
+| **Ignore** | Low | Low | Do not spend strategic energy unless they reveal a useful customer signal or move quadrant. |
+| **Partner** | Complementary | Complementary | Explore integration, referral, co-marketing, bundling, or distribution. |
 
-**High mindshare + high resources**
+## How it works
 
-This player is visible and capable. Compete directly only with a sharp wedge, clear proof, and channel discipline.
+### 1. Define the market boundaries
 
-Use:
-- comparison pages
-- proof-led positioning
-- wedge campaigns
-- sales battlecards
-- partnership attacks
+State the category, buyer, job-to-be-done, and scope. If this is vague, the matrix will be vague.
 
-### Monitor
+### 2. Sweep for competitors
 
-**Low mindshare + high resources**
+Use a customer-led approach. The core question is unaided recall:
 
-This player has capacity but has not yet captured attention. Watch them closely without overreacting.
+> When you think of [CATEGORY], what is the first product that comes to mind?
 
-Track:
-- funding
-- hiring
-- pricing
-- messaging
-- partnerships
-- launches
-- channel movement
+Then add aided questions for recognition, usage, recommendation, and value/dissatisfaction.
 
-### Harvest
+**Bias controls:** unaided before aided, no anchoring around your brand, neutral research framing, no raffle incentives.
 
-**High mindshare + low resources**
+If you cannot run a survey, use proxy signals: search data, social listening, review mining, app store rankings, press coverage, community mentions. Flag that you're using proxy data.
 
-This player has awareness but weak execution capacity. Use their awareness to educate the market, then win on fulfilment, trust, reliability, or depth.
+### 3. Collect signals for each player
 
-Use:
-- migration offers
-- gap content
-- switching paths
-- operational proof
-- reliability-led positioning
+For each priority competitor, gather website messaging, product claims, social presence, ads, pricing, press, hiring/funding signals, SEO topics, and customer objections. Separate verified evidence from assumptions.
 
-### Ignore
+### 4. Score and place on the matrix
 
-**Low mindshare + low resources**
+Score your own company first, then score competitors relative to your position. Assign category, rationale, and trigger for each player.
 
-This player does not deserve strategic energy. Note any useful customer signal, then move on.
+### 5. Select playbooks
 
-### Partner
+Choose one primary motion per priority player — attack, defend, harvest, monitor, or partner.
 
-**Complementary or ecosystem player**
+### 6. Identify whitespace and positioning
 
-This player does not need to be beaten to create advantage. Explore integration, referral, co-marketing, bundling, or distribution.
+Extract the gap: underserved audiences, weak promises, missing proof, confusing CTAs, channel mismatches. Convert each gap into a decision.
 
-## Research workflow
+### 7. Interpret market shape
 
-The full programme has three parts:
+Identify whether the market is fragmented, a challenger dynamic, ancient incumbents, or mature. Shape determines which playbooks to run.
 
-1. **Reconnaissance** — identify competitors and build the matrix from the customer view of the market.
-2. **Monitoring and extraction** — collect fresh signals on a fixed cadence.
-3. **Operationalise with playbooks** — attack, defend, harvest, ignore, or partner at the right time.
+## Output formats
 
-1. **Map the competitor set**
-   - Direct competitors
-   - Adjacent competitors
-   - Substitute behaviours
-   - Ecosystem actors
-
-2. **Run customer-led reconnaissance**
-   - Use unaided questions before aided questions.
-   - Core question: "When you think of [CATEGORY], what is the first product that comes to mind?"
-   - Add aided recognition, current usage, recommendation likelihood, and value/friction questions.
-   - Use anonymous or neutral research framing where possible to reduce bias.
-
-3. **Collect monitoring signals**
-   - Website and landing-page messaging
-   - Product pages and feature claims
-   - Social profiles and recent themes
-   - Visible ads or campaign pushes
-   - App store reviews, if relevant
-   - Pricing and onboarding flow
-   - Press mentions and partnerships
-   - Hiring, funding, and expansion signals
-   - SEO/blog topics
-   - Customer comments, FAQs, and repeated objections
-
-4. **Extract meaning**
-   - What promise are they making?
-   - Who are they speaking to?
-   - What pain do they lead with?
-   - What proof do they show?
-   - What CTA do they push?
-   - What channel are they strongest on?
-   - What do they avoid saying?
-   - What operational weakness is visible?
-
-5. **Place each player in the matrix**
-   - Mindshare: high / medium / low
-   - Resources: high / medium / low
-   - Category: attack / monitor / harvest / ignore / partner
-   - Confidence: high / medium / low
-
-6. **Interpret the market shape**
-   - Fragmented: no clear winner; grow fast if the market is valuable.
-   - Challenger: one or two large players; attack the leader or partner with challengers.
-   - Ancient: stagnant incumbents; harvest aggressively.
-   - Mature: active entrants and exits; run offensive and defensive playbooks.
-
-7. **Choose the playbook**
-   - One primary motion per priority player.
-   - Do not produce a research dump. Decide what to do.
-
-## Output format
-
-For a full analysis, use:
+### Full analysis
 
 1. Strategic thesis
-2. Competitor map
+2. Competitor set (direct, adjacent, substitutes, ecosystem)
 3. Evidence table
-4. Matrix placement
+4. Matrix placement with scores and rationale
 5. Whitespace and positioning
-6. Recommended actions
+6. Recommended actions with owners and checkpoints
 7. Market shape
 8. Milestones and triggers
 
-For a one-page decision memo, use:
+### One-page decision memo
 
 - **Player:** name
 - **Placement:** attack / monitor / harvest / ignore / partner
@@ -160,7 +90,7 @@ For a one-page decision memo, use:
 
 ## Hermes skill
 
-This repo includes a Hermes-compatible `SKILL.md`.
+This repo includes a Hermes-compatible `SKILL.md` with the full framework — step-by-step process, common pitfalls, verification checklist, and completion gate.
 
 Install by copying the repo or `SKILL.md` into your Hermes skills directory, then load:
 
@@ -175,6 +105,8 @@ Trigger it when working on competitor analysis, market intelligence, positioning
 Based on Patrick Campbell / Patticus, "Competitor Research and Strategy" (2023): https://patticus.com/2023/12/16/competitive-research-playbook/
 
 Packaged as a skill for structured market intelligence, positioning, and go-to-market decisions.
+
+See `SKILL.md` for the full framework including research process, output formats, common pitfalls, and verification checklist.
 
 ## License
 
