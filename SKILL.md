@@ -20,6 +20,8 @@ metadata:
 
 Use this skill when you need structured competitor judgement. The goal is to build judgement, then decide what to do about each player. Intelligence is upstream of action.
 
+Companies with structured competitive programmes report 23.7% lower customer acquisition costs, 18.9% higher customer lifetime value, and 15.4% higher customer satisfaction. The framework pays for itself.
+
 This skill classifies competitors on two axes (market mindshare and resource strength), assigns a strategic category (attack, monitor, harvest, ignore, partner), selects a playbook, and identifies whitespace. It produces decisions, not descriptions.
 
 ## Source scope
@@ -145,6 +147,14 @@ Then add aided questions for recognition, usage, recommendation, and value/dissa
 
 If you cannot run a survey, use proxy signals: search data, social listening, review mining, app store rankings, press coverage, community mentions. Flag that you're using proxy data.
 
+**Survey send best practices:**
+
+- Plain text emails get roughly 30% higher response rates than designed emails
+- Send early morning based on recipient timezone
+- Send a follow-up bump 3 days after initial send for non-openers
+- Schedule a thank-you message for survey completers
+- Do not use raffle prizes to incentivise responses — it rarely works unless each respondent is directly paid
+
 ### Step 3: Collect signals for each player
 
 For each priority competitor, gather:
@@ -160,6 +170,14 @@ For each priority competitor, gather:
 - SEO and blog topics
 - Customer comments, FAQs, repeated objections
 
+**People-level signals** (go deeper than company-level):
+
+- Key employee social media — junior employees say too much, executives telegraph strategy, disgruntled staff signal internal problems
+- Departing employees — tend to be loose-lipped; reach out for conversations
+- Glassdoor reviews — not a quality signal, but a treasure trove of internal strategy shifts, culture problems, and leadership issues
+- Job postings — shifts in descriptions reveal strategic priorities; titles of new director/VP/C-level hires show where resources are moving
+- Board member communications — board advice cascades into companies; track what they share publicly
+
 **Separate verified evidence from assumptions.** State the source and date for each signal. If you're guessing, say so.
 
 ### Step 4: Score and place on the matrix
@@ -174,46 +192,72 @@ For each player:
 
 **Score your own company first.** Then score competitors relative to your position.
 
-### Step 5: Select playbooks
+### Step 5: Build the Attack Vector Grid
 
-Choose one primary motion per priority player.
+Before selecting playbooks, distil your research into a structured vulnerability document for each priority competitor. Answer two sets of questions:
+
+**How the customer views the product:**
+
+- What are the top product weaknesses customers complain about? (these become pressure points for attack playbooks)
+- What are the top strengths customers praise? (you need to match or reframe these)
+- What do customers want that you solve (or could solve) that the competitor treats as an afterthought? (these expose vectors of attack)
+
+**How the competitor's leadership team views the product:**
+
+- Which features or strengths do leaders care about most? (knowing what they think is their strength lets you threaten it or align with it for partnerships)
+- What makes them feel insecure? (people act erratically when minimising insecurity — rushing, overspending, overcorrecting)
+- Who are your joint enemies? (everyone fears someone; joint enemies create openings for conversations and attacks)
+
+You will not be certain about all of this. You do not need to be. The grid surfaces themes of vulnerability. Those themes are enough to exploit. You will iterate over time as revenue data tells you what is working.
+
+### Step 6: Select playbooks
+
+Choose one primary motion per priority player. Use your Attack Vector Grid to select playbooks that press on the vulnerabilities you identified.
 
 **Attack playbooks:**
-- Comparison page
-- Wedge campaign
-- Proof-led positioning
-- Partnership attack
-- Content wedge
-- Sales battlecard
+
+- **Comparison page** — for every high-mindshare competitor, build a landing page that compares you head-to-head. Include customised hero, feature tables, pricing comparison, customer testimonials from switchers, and something good about the competitor (builds trust). These become your highest-converting pages when done right.
+- **Search campaigns** — bid on competitor brand names in paid search (10-35% of their traffic comes from people searching their name instead of typing the URL). Build organic landing pages for "[competitor] alternative" queries. High ROI, low volume, very targeted.
+- **Wedge campaign** — see Wedge Strategy below.
+- **Sales battlecards** — internal slides for each competitor covering: who uses them, why you win, why you lose, common objections and responses. Consider proactive advisory-driven sales: share your competitive research in the sales process to become a trusted advisor rather than just another vendor.
+- **Target competitor customer lists** — identify competitor customers through firmographic tools, conference sponsors, forums, and review sites. Run targeted outbound or ad campaigns that implant doubt about the competitor, then alleviate that doubt with your product.
+- **Ad campaigns** — targeted ads that press on competitor weaknesses without necessarily naming them. Dove's "deserve better" campaign never mentions competitors but reframes the category. Be aggressive but honest — stretching the truth damages your brand.
 
 **Defend playbooks:**
-- Retention messaging
-- Customer education
-- Objection handling
-- Proof bank
+
+Choose your defensive posture based on the attacker's relative mindshare:
+
+- **Above the fray** (attacker has less mindshare) — do not give them oxygen by responding publicly. Keep conversations private. Maintain a paper trail of your reasonableness. Respond publicly only if they escalate, and only to show you offered to resolve it privately.
+- **All-out counterattack** (similar mindshare) — match their energy. Use all attack playbooks. Deploy legal counsel if they misrepresent your product. Do not hide behind unnamed references — customers know who you are talking about. Lean into the directness.
+- **Play the victim** (attacker has far more mindshare) — rally your customers and community against the bully. Use traditional and social media. The goal is not to win a debate about merits — it is to make the competitor look unreasonable and apply public pressure. Humans do not like being associated with bullies.
+
+Additional defend playbooks:
+
+- Retention messaging and customer education
+- Objection handling and proof bank
 - Switching-cost reinforcement
 
 **Harvest playbooks:**
-- Migration offer
-- Gap content
-- Switching path
-- Operational reliability proof
-- Integration strategy
+
+- **Partnership** — forge partnerships with high-mindshare, low-resource competitors. Find the plane of partnership that aligns with their incentives (often revenue or gap-filling). Incept the idea through customer demand, not your own pitch. Start small, prove value, expand.
+- **Mini-product** — build a small free tool targeted at a specific competitor vulnerability. The tool acts as a trojan horse: it solves one problem, captures the user, and creates a path to your full product.
+- **Migration services** — make switching effortless. Build automated import tools or offer manual migration services. Remove every objection related to data continuity, setup effort, and learning curve. If a competitor's contract is a barrier, offer contract buyouts: match their remaining contract length with free time on your product.
+- **Gap content** — create content that exposes the gap between what the competitor promises and what customers actually experience.
+- **Integration strategy** — build integrations with the competitor's product to make switching easier and get listed in their app store.
 
 **Monitor playbooks:**
-- Monthly watchlist
-- Trigger tracking
+
+- Monthly watchlist and trigger tracking
 - Funding, hiring, partnership alerts
 - Messaging change log
 
 **Partner playbooks:**
+
 - Ecosystem integration plan
-- Referral path
-- Joint campaign
-- Audience swap
+- Referral path, joint campaign, audience swap
 - Co-branded trust proof
 
-### Step 6: Identify whitespace and positioning
+### Step 7: Identify whitespace and positioning
 
 Extract the gap. Look for:
 
@@ -230,7 +274,7 @@ Extract the gap. Look for:
 
 Convert each gap into a decision or action.
 
-### Step 7: Interpret market shape
+### Step 8: Interpret market shape
 
 Identify the market shape:
 
@@ -238,6 +282,55 @@ Identify the market shape:
 - **Challenger** — one or two big players dominate. Attack the leaders; consider partnering with other challengers.
 - **Ancient** — old incumbents with stagnant products or poor customer experience. Harvest aggressively.
 - **Mature** — active market with entrants, exits, and competitors across quadrants. Run offensive and defensive playbooks.
+
+## Wedge Strategy
+
+The Wedge Strategy is the highest-leverage attack playbook for All-out Attack competitors. It works by identifying an area where competitors are weak and insecure, making that area your core identity, and forcing the market to care about it through message discipline.
+
+**Finding your wedge:**
+
+A good wedge meets three criteria:
+
+1. **Fundamental value** — the wedge addresses something customers consider essential to the product category, not a nice-to-have
+2. **Low competitor priority** — competitor product teams are not focusing on it (often because they are busy shipping features they think matter more)
+3. **Technical barrier** — achieving it requires significant effort, which prevents competitors from quickly closing the gap
+
+Look at your Attack Vector Grid. The weaknesses customers complain about most, especially when competitors are ignoring them, are your wedge candidates.
+
+**Forcing your wedge on the market:**
+
+Once you choose a wedge, talk about it constantly. Every blog post, every sales message, every interview. Two axes of pressure:
+
+1. **Sow doubt with customers** — make customers question whether their current solution is good enough on the wedge dimension. Build mini-tools that highlight what they are missing. Run accuracy audits, free assessments, or comparison tools that prove your wedge.
+2. **Convince market influencers** — push your wedge into industry reports, analyst conversations, influencer reviews, and creator content. When analysts include your wedge as a comparison category, you have changed the narrative.
+
+**Sign it is working:** competitors start addressing your wedge in their own sales and marketing. They are reacting to you. Double down. Moving a market takes 9 months to 3 years. When competitors shift resources to address your wedge, they weaken their original strengths. You are now leading.
+
+## Monitoring and the Judgment Log
+
+Once the matrix is built and playbooks are running, shift to monitoring. The goal is to build judgement over time by tracking changes and testing your predictions.
+
+**Judgment Log** — for each priority competitor, record monthly or quarterly:
+
+- What did I predict last time? What turned out right? Wrong?
+- What do they seem focused on? Has that changed?
+- Where do they seem strong? Weak?
+- What do I think they will do next?
+- Any notable conversations with people connected to them?
+
+After six months of monthly reviews (6 hours) or four quarters (4 hours), you will understand your market better than anyone.
+
+**Monitoring cadence:**
+
+- Global sweep (full matrix refresh): quarterly at scale, every 6 months when starting
+- Signal monitoring (dashboards, profiles, media labels): monthly or quarterly
+- Judgment Log review: monthly or quarterly, same cycle as monitoring
+
+**What to review each cycle:**
+
+- Market Intelligence Deck — growth trends, sentiment shifts, new entrants
+- Competitor Dashboard and Profiles — headcount, NPS, feature changes, customer lists
+- Media Monitoring Labels — marketing messages, job postings, social media, press
 
 ## Output format
 
@@ -285,6 +378,12 @@ When the user needs a compressed format:
 
 10. **Re-running from scratch instead of updating.** The matrix is a living document. On refresh, re-check signals and re-score — don't rebuild the structure each time. The framework persists; the data updates.
 
+11. **Skipping the Attack Vector Grid.** Going straight from matrix placement to playbook selection without distilling vulnerabilities means you are guessing at pressure points instead of using evidence. The grid is the bridge between research and action.
+
+12. **Picking a wedge that needs explaining.** If you cannot state your wedge's value in one sentence without layers of context, it is not a wedge — it is a feature. A good wedge is simple enough for customers to understand immediately but valuable enough that they demand it from every product in the category.
+
+13. **Responding to every attacker publicly.** If a competitor with minimal mindshare attacks you, responding publicly gives them oxygen they do not deserve. Match your defensive posture to the attacker's position on the matrix, not to your emotional reaction.
+
 ## Verification checklist
 
 Before returning the final analysis:
@@ -297,6 +396,7 @@ Before returning the final analysis:
 - [ ] Every signal has a source and date
 - [ ] Verified evidence is separated from assumptions
 - [ ] Each priority player has a category, rationale, and trigger
+- [ ] Attack Vector Grid is built for each priority player
 - [ ] Playbook is selected for each priority player
 - [ ] Whitespace and positioning gaps are identified
 - [ ] Market shape is interpreted (if enough data exists)
@@ -310,6 +410,7 @@ Do not finalise unless the analysis includes:
 - Matrix category for each priority player
 - Rationale with evidence and confidence
 - Verified vs assumed separation
+- Attack Vector Grid for each priority player
 - Selected playbook per priority player
 - Next action per priority player
 - Measurable checkpoint or trigger
