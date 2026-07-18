@@ -6,7 +6,7 @@ description: >
   judgement for market mapping, campaign planning, positioning, go-to-market
   prioritisation, content strategy, or partnership decisions.
 version: 2.0.0
-author: Patrick Campbell / Patticus
+author: Kastrah
 license: MIT
 tags: [competition, strategy, positioning, market-intelligence, go-to-market]
 metadata:
@@ -19,8 +19,6 @@ metadata:
 ## Overview
 
 Use this skill when you need structured competitor judgement. The goal is to build judgement, then decide what to do about each player. Intelligence is upstream of action.
-
-Companies with structured competitive programmes report 23.7% lower customer acquisition costs, 18.9% higher customer lifetime value, and 15.4% higher customer satisfaction. The framework pays for itself.
 
 This skill classifies competitors on two axes (market mindshare and resource strength), assigns a strategic category (attack, monitor, harvest, ignore, partner), selects a playbook, and identifies whitespace. It produces decisions, not descriptions.
 
