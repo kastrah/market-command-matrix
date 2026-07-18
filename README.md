@@ -4,7 +4,7 @@ A competitor strategy framework for deciding what to do about players in your ma
 
 Companies with structured competitive programmes report 23.7% lower customer acquisition costs, 18.9% higher customer lifetime value, and 15.4% higher customer satisfaction.
 
-Most competitor research stops at summaries: who exists, what they sell, what their website says. The Market Command Matrix turns competitor signals into action by classifying each player on two axes:
+Yet most competitor research stops at summaries: who exists, what they sell, what their website says. The Market Command Matrix turns competitor signals into action by classifying each player on two axes:
 
 - **Market mindshare** — how much awareness, conversation, and category association they have.
 - **Resource strength** — how much capacity and focus they have dedicated to winning this market.
