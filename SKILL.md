@@ -18,9 +18,7 @@ metadata:
 
 ## Overview
 
-Use this skill when you need structured competitor judgement. The goal is to build judgement, then decide what to do about each player. Intelligence is upstream of action.
-
-This skill classifies competitors on two axes (market mindshare and resource strength), assigns a strategic category (attack, monitor, harvest, ignore, partner), selects a playbook, and identifies whitespace. It produces decisions, not descriptions.
+Use this skill when you need structured competitor judgement. The goal is to build judgement, then decide what to do about each player. Intelligence is upstream of action. This skill classifies competitors on two axes (market mindshare and resource strength), assigns a strategic category (attack, monitor, harvest, ignore, partner), selects a playbook, and identifies whitespace. It produces decisions, not descriptions.
 
 ## Source scope
 
